@@ -55,6 +55,40 @@ Use rename() with columns or index parameters to rename labels.
 
 ![image](https://github.com/user-attachments/assets/41e04508-b6a9-4279-a618-709b2e45e285)
 
+### 11. Difference between fillna() and interpolate() methods
+**fillna()**: Replaces missing values with a specified constant or method (like forward/backward fill).
+**interpolate()**: estimates and fills missing values based on other data points using mathematical interpolation.
+![image](https://github.com/user-attachments/assets/029db749-4b3c-4fd6-a0c3-1f2482014904)
+Smoothly estimates missing values between 1 and 4 using linear interpolation.
+
+### 12. What are common file formats Pandas can read from or write to?
+list of common file formats that pandas can read from and write to:
+                            Reading:
+CSV: pd.**read_csv()**
+Excel: pd.**read_excel()**
+SQL: pd.**read_sql()**
+JSON: pd.**read_json()**
+                            Writing:
+CSV: df.**to_csv()**
+Excel: df.**to_excel()**
+
+### 13. What is the astype() method, and why is it used?
+**astype()**: astype is a method used to convert the DataType of a pandas Series or DataFrame column.
+![image](https://github.com/user-attachments/assets/3fe7cac9-2496-4b3f-af68-099bb1b05e80)
+Converting the grade column to category reduces memory usage, especially for columns with limited unique values.
+
+### 14. How do you merge DataFrames with different key columns?
+Using the **merge()** function with the left_on and right_on parameters you can merge columns with different names but representing the same data.
+![image](https://github.com/user-attachments/assets/3b66544b-eebe-40fd-b3db-08148a0274be)
+
+### 15: How do you check the memory usage of a DataFrame?
+The primary method to check memory usage is DataFrame.**memory_usage()**, which provides the memory consumption of each column in bytes.
+
+![image](https://github.com/user-attachments/assets/45d5acaa-3a7e-498c-8828-5ebcac570851)
+
+
+
+
 
 
 
