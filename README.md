@@ -86,6 +86,40 @@ The primary method to check memory usage is DataFrame.**memory_usage()**, which 
 
 ![image](https://github.com/user-attachments/assets/45d5acaa-3a7e-498c-8828-5ebcac570851)
 
+### 16. What is the difference between groupby() and pivot_table()?
+**groupby()**: Groups data and applies aggregate functions (e.g., sum, mean).
+**pivot_table()**: More flexible than groupby, allows multi-level aggregation and reshaping similar to Excel pivot tables.
+![image](https://github.com/user-attachments/assets/acc7a8a8-ee58-4e09-a092-a9726dd22f82)
+
+### 17. What are common file formats Pandas can read from or write to?
+Pandas offers several methods to handle missing data:
+**dropna()**: Removes rows/columns with missing values.
+**fillna()**: Fills missing values with a specified value or method (e.g., forward fill).
+**interpolate()**: Fills missing values using interpolation techniques (linear, polynomial, etc.).
+
+### 18. What is the difference between sort_values() and sort_index()?
+**sort_values(by='column')**: Sorts by the values in one or more columns.
+**sort_index()**: Sorts the DataFrame by its index (row labels).
+![image](https://github.com/user-attachments/assets/8523002f-e5da-457b-8374-d7ec5d00bccd)
+
+### 19. What is the difference between isin() and str.contains() in Pandas?
+**isin()**: Used to filter rows where a column’s value is in a list of values.
+**str.contains()**: Used with string columns to filter rows containing a specific substring.
+![image](https://github.com/user-attachments/assets/765bb9ff-9265-48a1-a7b1-ef214e58be94)
+
+### 20. How can you identify and handle outliers in a DataFrame?
+Use statistical methods like IQR (Interquartile Range) or z-score.
+![image](https://github.com/user-attachments/assets/5618bdbf-d558-4b73-af2a-f1450b147d84)
+The interquartile range (IQR) formula is calculated as the difference between the third quartile (Q3) and the first quartile (Q1). In other words, IQR = Q3 - Q1.
+
+
+
+
+
+
+
+
+
 
 
 
