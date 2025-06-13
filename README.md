@@ -112,6 +112,39 @@ Use statistical methods like IQR (Interquartile Range) or z-score.
 ![image](https://github.com/user-attachments/assets/5618bdbf-d558-4b73-af2a-f1450b147d84)
 The interquartile range (IQR) formula is calculated as the difference between the third quartile (Q3) and the first quartile (Q1). In other words, IQR = Q3 - Q1.
 
+### 21. What is method chaining in Pandas and why is it useful?
+* **Method chaining** is the practice of applying multiple methods sequentially on a DataFrame without assigning intermediate results to variables.
+* in **Simple words** its a chain of methods like dropna, sort, etc  sequence apply on dataframe, and than return the final resultant dataframe.
+![image](https://github.com/user-attachments/assets/f2cdbf26-1536-4967-b540-0eca269d55f3)
+
+### 22. What’s the difference between copy() and assigning a DataFrame directly?
+* Direct assignment **(df2 = df1)** creates a reference. **Changing one affects the Other**.
+* Using **df.copy()** creates a deep copy and keeps the original DataFrame unchanged.
+![image](https://github.com/user-attachments/assets/9b8a5bd5-c1a4-4ed5-bb65-d8add71cf95e)
+
+### 23. How do you convert a String ‘'Wednesday, April 20, 2022'’ or ‘'04-20-2022'’ to DateTime?
+* We can use to_datetime method in pandas to convert a string like **'Wednesday, April 20, 2022'** or **'04-20-2022'** to a datetime object in Pandas, 
+* You can use the **pd.to_datetime()** function.
+![image](https://github.com/user-attachments/assets/bafd204b-a86e-4b0d-ac38-d543e5c84b3b)
+
+### 24. How can we convert DataFrame to Numpy Array?
+* In order to convert DataFrame to a Numpy array we need to use **DataFrame.to_numpy()** method.   
+**Why to bother converting ?**
+NumPy’s contiguous ndarray is more compact and faster for pure numerical computation.
+Most scientific and machine‑learning libraries **(scikit‑learn, TensorFlow, SciPy, OpenCV…)** expect inputs as NumPy arrays. Converting once means you can pass your data straight into an estimator or C‑extension without wrestling with Pandas internals.
+
+### 25. How would you iterate over rows in a DataFrame in Pandas?
+Although it is not a good practice to iterate over rows in Pandas if there is no other alternative we do so using either **iterrows()** or **itertuples()** built-in methods.
+![image](https://github.com/user-attachments/assets/b12fbf5d-836b-44fb-a98b-c4b75c001867)
+
+
+
+
+
+
+
+
+
 
 
 
